@@ -32,6 +32,13 @@ const project = new typescript.TypeScriptProject({
   minNodeVersion: "14.18.0",
 });
 
+// Docs.
+project.npmignore?.addPatterns("/docs/");
+
+// Lint.
+project.npmignore?.addPatterns("/.editorconfig");
+project.npmignore?.addPatterns("/.prettier*");
+
 // ESM.
 project.addFields({
   type: "module",
@@ -54,6 +61,8 @@ project.compileTask.prependExec(
 );
 
 // Test.
+project.npmignore?.addPatterns("/coverage/");
+
 project.addDevDeps("vitest", "c8");
 project.testTask.exec("vitest test/rules --passWithNoTests --coverage --run");
 
