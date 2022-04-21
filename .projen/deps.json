@@ -1,27 +1,7 @@
 {
   "dependencies": [
     {
-      "name": "@rollup/plugin-alias",
-      "type": "build"
-    },
-    {
-      "name": "@rollup/plugin-commonjs",
-      "type": "build"
-    },
-    {
-      "name": "@rollup/plugin-json",
-      "type": "build"
-    },
-    {
-      "name": "@rollup/plugin-node-resolve",
-      "type": "build"
-    },
-    {
       "name": "@types/eslint",
-      "type": "build"
-    },
-    {
-      "name": "@types/jest",
       "type": "build"
     },
     {
@@ -37,6 +17,10 @@
     {
       "name": "@typescript-eslint/parser",
       "version": "^5",
+      "type": "build"
+    },
+    {
+      "name": "c8",
       "type": "build"
     },
     {
@@ -68,15 +52,6 @@
       "type": "build"
     },
     {
-      "name": "jest",
-      "type": "build"
-    },
-    {
-      "name": "jest-junit",
-      "version": "^13",
-      "type": "build"
-    },
-    {
       "name": "json-schema",
       "type": "build"
     },
@@ -94,28 +69,16 @@
       "type": "build"
     },
     {
-      "name": "rollup",
-      "type": "build"
-    },
-    {
-      "name": "rollup-plugin-dts",
-      "type": "build"
-    },
-    {
-      "name": "rollup-plugin-esbuild",
-      "type": "build"
-    },
-    {
       "name": "standard-version",
       "version": "^9",
       "type": "build"
     },
     {
-      "name": "ts-jest",
+      "name": "typescript",
       "type": "build"
     },
     {
-      "name": "typescript",
+      "name": "vitest",
       "type": "build"
     },
     {

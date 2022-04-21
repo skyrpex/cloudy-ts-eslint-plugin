@@ -78,7 +78,13 @@
       "description": "Only compile",
       "steps": [
         {
-          "exec": "tsc --build"
+          "exec": "yarn link && cd ./test/test-app && yarn && yarn link @cloudy-ts/eslint-plugin"
+        },
+        {
+          "exec": "esbuild src/index.ts --bundle --target=es2020 --platform=node --format=cjs --outfile=lib/index.cjs"
+        },
+        {
+          "exec": "esbuild src/index.ts --bundle --target=es2020 --platform=node --format=esm --outfile=lib/index.js"
         }
       ]
     },
@@ -165,28 +171,13 @@
       "description": "Run tests",
       "steps": [
         {
-          "exec": "jest --passWithNoTests --all --updateSnapshot --coverageProvider=v8"
+          "spawn": "eslint"
         },
         {
-          "spawn": "eslint"
-        }
-      ]
-    },
-    "test:update": {
-      "name": "test:update",
-      "description": "Update jest snapshots",
-      "steps": [
+          "exec": "vitest test/rules --passWithNoTests --coverage --run"
+        },
         {
-          "exec": "jest --updateSnapshot"
-        }
-      ]
-    },
-    "test:watch": {
-      "name": "test:watch",
-      "description": "Run jest in watch mode",
-      "steps": [
-        {
-          "exec": "jest --watch"
+          "exec": "vitest test/test-app/index.test.ts --run"
         }
       ]
     },
@@ -250,7 +241,7 @@
       "description": "Watch & compile in the background",
       "steps": [
         {
-          "exec": "tsc --build -w"
+          "exec": "vitest test/rules --passWithNoTests --coverage"
         }
       ]
     }
