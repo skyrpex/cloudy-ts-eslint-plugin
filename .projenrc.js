@@ -1,12 +1,54 @@
-const { TypeScriptProject } = require('projen');
-const project = new TypeScriptProject({
-  defaultReleaseBranch: 'main',
-  name: 'cloudy-ts-eslint-plugin',
+import { javascript, typescript } from "projen";
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
-  // release: undefined,      /* Add release management to this project. */
+const project = new typescript.TypeScriptProject({
+  defaultReleaseBranch: "main",
+  name: "@cloudy-ts/eslint-plugin",
+
+  deps: [],
+  devDeps: [
+    "eslint",
+    "@types/eslint",
+    "esbuild",
+    "rollup",
+    "rollup-plugin-esbuild",
+    "rollup-plugin-dts",
+    "@rollup/plugin-node-resolve",
+    "@rollup/plugin-commonjs",
+    "@rollup/plugin-json",
+    "@rollup/plugin-alias",
+  ],
+  peerDeps: ["eslint"],
+
+  prettier: true,
+
+  tsconfig: {
+    compilerOptions: {
+      lib: ["ES2020"],
+      target: "ES2020",
+      module: "ES2020",
+      moduleResolution: "node",
+      noUncheckedIndexedAccess: true,
+    },
+  },
+
+  minNodeVersion: "14.18.0",
+
+  releaseToNpm: true,
+  npmAccess: javascript.NpmAccess.PUBLIC,
 });
+
+project.addFields({
+  type: "module",
+  exports: {
+    ".": {
+      import: `./lib/index.js`,
+      types: "./lib/index.d.ts",
+    },
+  },
+});
+
+// project.compileTask.exec("rollup -c");
+// project.watchTask.prependExec("rollup -c --watch");
+// project.addTask("dev", { exec: "rollup -c --watch" });
+
 project.synth();
