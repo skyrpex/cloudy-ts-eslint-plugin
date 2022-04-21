@@ -5,22 +5,12 @@ const project = new typescript.TypeScriptProject({
   name: "@cloudy-ts/eslint-plugin",
 
   deps: [],
-  devDeps: [
-    "eslint",
-    "@types/eslint",
-    "esbuild",
-    "rollup",
-    "rollup-plugin-esbuild",
-    "rollup-plugin-dts",
-    "@rollup/plugin-node-resolve",
-    "@rollup/plugin-commonjs",
-    "@rollup/plugin-json",
-    "@rollup/plugin-alias",
-  ],
   peerDeps: ["eslint"],
+  devDeps: ["eslint", "@types/eslint"],
 
-  prettier: true,
-
+  // ESM.
+  entrypoint: "lib/index.cjs",
+  entrypointTypes: "",
   tsconfig: {
     compilerOptions: {
       lib: ["ES2020"],
@@ -31,24 +21,48 @@ const project = new typescript.TypeScriptProject({
     },
   },
 
-  minNodeVersion: "14.18.0",
+  // Lint.
+  prettier: true,
+
+  // Test.
+  jest: false,
 
   releaseToNpm: true,
   npmAccess: javascript.NpmAccess.PUBLIC,
+  minNodeVersion: "14.18.0",
 });
 
+// ESM.
 project.addFields({
   type: "module",
   exports: {
     ".": {
+      require: "./lib/index.cjs",
       import: `./lib/index.js`,
-      types: "./lib/index.d.ts",
     },
   },
 });
 
-// project.compileTask.exec("rollup -c");
-// project.watchTask.prependExec("rollup -c --watch");
-// project.addTask("dev", { exec: "rollup -c --watch" });
+// Build.
+project.addDevDeps("esbuild");
+project.compileTask.reset();
+project.compileTask.prependExec(
+  "esbuild src/index.ts --bundle --target=es2020 --platform=node --format=esm --outfile=lib/index.js"
+);
+project.compileTask.prependExec(
+  "esbuild src/index.ts --bundle --target=es2020 --platform=node --format=cjs --outfile=lib/index.cjs"
+);
+
+// Test.
+project.addDevDeps("vitest", "c8");
+project.testTask.exec("vitest test/rules --passWithNoTests --coverage --run");
+
+project.compileTask.prependExec(
+  "yarn link && cd ./test/test-app && yarn && yarn link @cloudy-ts/eslint-plugin"
+);
+project.testTask.exec("vitest test/test-app/index.test.ts --run");
+
+project.watchTask.reset();
+project.watchTask.exec("vitest test/rules --passWithNoTests --coverage");
 
 project.synth();
