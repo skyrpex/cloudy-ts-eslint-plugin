@@ -28,6 +28,8 @@ const project = new typescript.TypeScriptProject({
   jest: false,
 
   releaseToNpm: true,
+  autoApproveUpgrades: true,
+  autoApproveOptions: {},
   npmAccess: javascript.NpmAccess.PUBLIC,
   minNodeVersion: "14.18.0",
 });
