@@ -29,7 +29,9 @@ const project = new typescript.TypeScriptProject({
 
   releaseToNpm: true,
   autoApproveUpgrades: true,
-  autoApproveOptions: {},
+  autoApproveOptions: {
+    secret: "PROJEN_GITHUB_TOKEN",
+  },
   npmAccess: javascript.NpmAccess.PUBLIC,
   minNodeVersion: "14.18.0",
 });
