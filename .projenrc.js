@@ -30,7 +30,7 @@ const project = new typescript.TypeScriptProject({
   releaseToNpm: true,
   autoApproveUpgrades: true,
   autoApproveOptions: {
-    allowedUsernames: ["skyrpex[bot]"],
+    allowedUsernames: ["skyrpex-bot[bot]"],
     secret: "PROJEN_GITHUB_TOKEN",
   },
   npmAccess: javascript.NpmAccess.PUBLIC,
