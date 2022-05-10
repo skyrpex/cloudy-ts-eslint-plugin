@@ -1,4 +1,4 @@
-import { javascript, typescript } from "projen";
+import { javascript, typescript, github } from "projen";
 
 const project = new typescript.TypeScriptProject({
   defaultReleaseBranch: "main",
@@ -30,8 +30,11 @@ const project = new typescript.TypeScriptProject({
   releaseToNpm: true,
   autoApproveUpgrades: true,
   autoApproveOptions: {
-    allowedUsernames: ["skyrpex-bot[bot]"],
-    secret: "PROJEN_GITHUB_TOKEN",
+    allowedUsernames: ["skyrpex", "skyrpex-bot[bot]"],
+    secret: "GITHUB_TOKEN",
+  },
+  githubOptions: {
+    projenCredentials: github.GithubCredentials.fromApp(),
   },
   npmAccess: javascript.NpmAccess.PUBLIC,
   minNodeVersion: "14.18.0",
