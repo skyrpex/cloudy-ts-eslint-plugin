@@ -25,7 +25,7 @@
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
     "c8": "^7.11.3",
-    "esbuild": "^0.14.39",
+    "esbuild": "^0.14.41",
     "eslint": "^8",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-node": "^0.3.6",
@@ -35,7 +35,7 @@
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
     "prettier": "^2.6.2",
-    "projen": "^0.56.34",
+    "projen": "^0.56.36",
     "standard-version": "^9",
     "typescript": "^4.7.2",
     "vitest": "^0.12.9"
