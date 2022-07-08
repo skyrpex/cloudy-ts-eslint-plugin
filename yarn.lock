@@ -1157,9 +1157,9 @@ dotgitignore@^2.1.0:
     minimatch "^3.0.4"
 
 duplexer3@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
-  integrity sha512-CEj8FwwNA4cVH2uFCoHUrmojhYh1vmCdOaneKJXwkeY1i9jnlslVo9dx+hQ5Hl9GnH/Bwy/IjxAyOePyPKYnzA==
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.5.tgz#0b5e4d7bad5de8901ea4440624c8e1d20099217e"
+  integrity sha512-1A8za6ws41LQgv9HrE/66jyC5yuSjQ3L/KOpFtoBilsAK2iA2wuS5rTt1OCzIvtS2V7nVmedsUU+DGRcjBmOYA==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -4106,10 +4106,10 @@ validate-npm-package-name@^4.0.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vitest@^0.17.0:
-  version "0.17.0"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.17.0.tgz#fc676db0e0dda7a8e22eb9f0176cb8fc6132c33d"
-  integrity sha512-5YO9ubHo0Zg35mea3+zZAr4sCku32C3usvIH5COeJB48TZV/R0J9aGNtGOOqEWZYfOKP0pGZUvTokne3x/QEFg==
+vitest@^0.17.1:
+  version "0.17.1"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-0.17.1.tgz#0387535624538bfc1fe1a69fac617cca059428e2"
+  integrity sha512-d6NsFC6FPmZ5XdiSYfW5rwJ/b8060wqe2steNNlVbhO69HWma6CucIm5g7PXlCSkmKvrdEbUsZHPAarlH83VGw==
   dependencies:
     "@types/chai" "^4.3.1"
     "@types/chai-subset" "^1.3.3"
