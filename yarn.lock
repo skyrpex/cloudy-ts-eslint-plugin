@@ -635,10 +635,10 @@ builtins@^5.0.0:
   dependencies:
     semver "^7.0.0"
 
-c8@^7.11.3:
-  version "7.11.3"
-  resolved "https://registry.yarnpkg.com/c8/-/c8-7.11.3.tgz#88c8459c1952ed4f701b619493c9ae732b057163"
-  integrity sha512-6YBmsaNmqRm9OS3ZbIiL2EZgi1+Xc4O24jL3vMYGE6idixYuGdy76rIfIdltSKDj9DpLNrcXSonUTR1miBD0wA==
+c8@^7.12.0:
+  version "7.12.0"
+  resolved "https://registry.yarnpkg.com/c8/-/c8-7.12.0.tgz#402db1c1af4af5249153535d1c84ad70c5c96b14"
+  integrity sha512-CtgQrHOkyxr5koX1wEUmN/5cfDa2ckbHRA4Gy5LAL0zaCFtVWJS5++n+w4/sr2GWGerBxgTjpKeDclk/Qk6W/A==
   dependencies:
     "@bcoe/v8-coverage" "^0.2.3"
     "@istanbuljs/schema" "^0.1.3"
@@ -2671,9 +2671,9 @@ make-dir@^3.0.0:
     semver "^6.0.0"
 
 make-fetch-happen@^10.0.3, make-fetch-happen@^10.0.6:
-  version "10.1.8"
-  resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-10.1.8.tgz#3b6e93dd8d8fdb76c0d7bf32e617f37c3108435a"
-  integrity sha512-0ASJbG12Au6+N5I84W+8FhGS6iM8MyzvZady+zaQAu+6IOaESFzCLLD0AR1sAFF3Jufi8bxm586ABN6hWd3k7g==
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-10.2.0.tgz#0bde3914f2f82750b5d48c6d2294d2c74f985e5b"
+  integrity sha512-OnEfCLofQVJ5zgKwGk55GaqosqKjaR6khQlJY3dBAA+hM25Bc5CmX5rKUfVut+rYA3uidA7zb7AvcglU87rPRg==
   dependencies:
     agentkeepalive "^4.2.1"
     cacache "^16.1.0"
@@ -3334,10 +3334,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.58.36:
-  version "0.58.36"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.58.36.tgz#31666a6bfdb4085eb7e1c504ed574575688740a9"
-  integrity sha512-v/PwmIZq4LJ9n1FrpRrYm9cXWEgyn9QqJ7Q4h2hnVFZIfgADwcmdPdUYfOlvr3i9dtCCigGUNXFlGJivZJAn5Q==
+projen@^0.59.3:
+  version "0.59.3"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.59.3.tgz#e449c13ecfaebde23fd16ee6cff007d8f8db349d"
+  integrity sha512-7gPJuva0tj/BYc8C9DUw4AGm4AzssKdO73I/+hbOOWNAlcvdS6AL82jDvmePrAnRgHREVRTkatCVzQGtParQvQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
