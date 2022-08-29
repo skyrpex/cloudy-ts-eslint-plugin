@@ -71,7 +71,7 @@ project.compileTask.prependExec(
 // Test.
 project.npmignore?.addPatterns("/coverage/");
 
-project.addDevDeps("vitest", "c8");
+project.addDevDeps("vitest", "@vitest/coverage-c8");
 project.testTask.exec("vitest test/rules --passWithNoTests --coverage --run");
 
 project.compileTask.prependExec(
