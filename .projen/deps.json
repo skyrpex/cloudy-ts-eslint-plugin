@@ -20,7 +20,7 @@
       "type": "build"
     },
     {
-      "name": "c8",
+      "name": "@vitest/coverage-c8",
       "type": "build"
     },
     {
