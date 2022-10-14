@@ -3370,10 +3370,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.63.18:
-  version "0.63.18"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.63.18.tgz#243aa6905da8460dd0d3cca2dfb3743f1495ec00"
-  integrity sha512-sljJ5ERcSr/SLH+LoH6O7aZSY8Q+01QYQkWOteo7JNRSQnDyhqPldl7reqX2KAhgpK/Awaf/v2FQ5hYbbvi2fg==
+projen@^0.63.20:
+  version "0.63.20"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.63.20.tgz#cd05bd496c6b800f8361e7ccd48304d968e9b2f5"
+  integrity sha512-pVv7uus7AFu8U3UBaZVEnK07W+jlIB2xgF2EsrGOHHQQ/6aiDtDIy67rDv4o7cx/oB8vXKN4SoMOJLXiUWSMRg==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -4274,9 +4274,9 @@ validate-npm-package-name@^4.0.0:
     builtins "^5.0.0"
 
 vite@^3.0.0:
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-3.1.7.tgz#9fc2b57a395f79175d38fa3cffd15080b0d9cbfc"
-  integrity sha512-5vCAmU4S8lyVdFCInu9M54f/g8qbOMakVw5xJ4pjoaDy5wgy9sLLZkGdSLN52dlsBqh0tBqxjaqqa8LgPqwRAA==
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-3.1.8.tgz#fa29144167d19b773baffd65b3972ea4c12359c9"
+  integrity sha512-m7jJe3nufUbuOfotkntGFupinL/fmuTNuQmiVE7cH2IZMuf4UbfbGYMUT3jVWgGYuRVLY9j8NnrRqgw5rr5QTg==
   dependencies:
     esbuild "^0.15.9"
     postcss "^8.4.16"
