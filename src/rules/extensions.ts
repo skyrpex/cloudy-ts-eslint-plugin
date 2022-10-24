@@ -41,7 +41,7 @@ export const rule: Rule.RuleModule = {
       }
 
       // Replace TypeScript extension with JavaScript extension.
-      if (value.endsWith(".ts")) {
+      if (value.endsWith(".ts") || value.endsWith(".tsx")) {
         context.report({
           node: source,
           messageId: replaceMessageId,
@@ -62,6 +62,7 @@ export const rule: Rule.RuleModule = {
       const extensions = [
         ["js", "js"],
         ["ts", "js"],
+        ["tsx", "js"],
         ["json", "json"],
       ] as const;
       (() => {
