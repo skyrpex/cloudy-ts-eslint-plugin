@@ -22,6 +22,8 @@ suite("extensions rule", () => {
       { input: "./fixtures/fixture3", output: "./fixtures/fixture3.json" },
       // Suggests JS extension first, if the other files exists.
       { input: "./fixtures/fixture4", output: "./fixtures/fixture4.js" },
+      // SUggests JS extension, if TSX file exists.
+      { input: "./fixtures/fixture5", output: "./fixtures/fixture5.js" },
     ],
   };
 

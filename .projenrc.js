@@ -20,6 +20,9 @@ const project = new typescript.TypeScriptProject({
       noUncheckedIndexedAccess: true,
     },
   },
+  tsconfigDev: {
+    include: ["test/**/*.tsx"],
+  },
 
   // Lint.
   prettier: true,
