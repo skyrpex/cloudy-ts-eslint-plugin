@@ -60,25 +60,28 @@ export const rule: Rule.RuleModule = {
 
       // Insert the proper file extension, if the file exists.
       const extensions = [
-        ["js", "js"],
-        ["ts", "js"],
-        ["tsx", "js"],
-        ["json", "json"],
+        [".js", ".js"],
+        [".ts", ".js"],
+        [".tsx", ".js"],
+        [".json", ".json"],
+        ["/index.js", "/index.js"],
+        ["/index.ts", "/index.js"],
+        ["/index.tsx", "/index.js"],
       ] as const;
       (() => {
         for (const [extension, replacement] of extensions) {
-          const filename = path.join(dirname, `${value}.${extension}`);
+          const filename = path.join(dirname, `${value}${extension}`);
           if (fs.existsSync(filename)) {
             context.report({
               node: source,
               messageId: appendMessageId,
               data: {
-                extension: `.${replacement}`,
+                extension: replacement,
               },
               fix(fixer) {
                 return fixer.insertTextAfterRange(
                   [range[0] + 1, range[1] - 1],
-                  `.${replacement}`
+                  replacement
                 );
               },
             });

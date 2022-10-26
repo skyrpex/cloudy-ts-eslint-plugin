@@ -24,6 +24,12 @@ suite("extensions rule", () => {
       { input: "./fixtures/fixture4", output: "./fixtures/fixture4.js" },
       // SUggests JS extension, if TSX file exists.
       { input: "./fixtures/fixture5", output: "./fixtures/fixture5.js" },
+      // Suggests using the `index.js` file, if it exists.
+      { input: "./fixtures/fixture6", output: "./fixtures/fixture6/index.js" },
+      { input: "./fixtures/fixture7", output: "./fixtures/fixture7/index.js" },
+      { input: "./fixtures/fixture8", output: "./fixtures/fixture8/index.js" },
+      // Suggests `file.js` if both `file.js` and `file/index.js` exist.
+      { input: "./fixtures/fixture9", output: "./fixtures/fixture9.js" },
     ],
   };
 
