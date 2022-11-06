@@ -2655,9 +2655,9 @@ lodash@^4.17.15, lodash@^4.17.21:
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 loupe@^2.3.1:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/loupe/-/loupe-2.3.4.tgz#7e0b9bffc76f148f9be769cb1321d3dcf3cb25f3"
-  integrity sha512-OvKfgCC2Ndby6aSTREl5aCCPTNIzlDfQZvZxNUrBrihDhL3xcrYegTblhmEiCrg2kKQz4XsFIaemE5BF4ybSaQ==
+  version "2.3.5"
+  resolved "https://registry.yarnpkg.com/loupe/-/loupe-2.3.5.tgz#b660be4f26b2be00834cf43bae4477aab160fd86"
+  integrity sha512-KNGVjhsXDxvY/cYE8GNi7SBaJSfJIT+/+/8GlprqBXpoU6cSR7/RT7OBJOsoYtyxq0L3q6oIcO8tX7dbEEXr3A==
   dependencies:
     get-func-name "^2.0.0"
 
@@ -3359,10 +3359,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.65.14:
-  version "0.65.14"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.14.tgz#48fe20025e2bbea0bd3f7baae2b91c5d35307679"
-  integrity sha512-yfIJuLtKy3Ir4V/sVTeifjFnAR887GK0b4U96V+rqFz+CXEYwQ3YaKkwJvJHvNdVBjNoHT1G36DmIu0e76EtXw==
+projen@^0.65.15:
+  version "0.65.15"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.65.15.tgz#21d830a2e2fbc98ef0f5e5b10a902d6c455b8868"
+  integrity sha512-tTvcch20D9ztXG/fnUhgEx3SwY8JqZnxSfVoZouQSGYIPJTJBri+wkJw0mXCxDdphvm52ezHu2X2R82GPsykmw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
