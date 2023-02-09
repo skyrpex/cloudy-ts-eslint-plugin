@@ -33,8 +33,8 @@
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
     "npm-check-updates": "^16",
-    "prettier": "^2.8.3",
-    "projen": "^0.67.41",
+    "prettier": "^2.8.4",
+    "projen": "^0.67.43",
     "standard-version": "^9",
     "typescript": "^4.9.5",
     "vitest": "^0.28.4"
