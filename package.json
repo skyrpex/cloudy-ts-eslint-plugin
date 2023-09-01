@@ -41,7 +41,7 @@
     "vitest": "^0.34.3"
   },
   "peerDependencies": {
-    "eslint": "^8.36.0"
+    "eslint": "^8.48.0"
   },
   "pnpm": {},
   "engines": {
