@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "@cloudy-ts/eslint-plugin": "link:../..",
     "eslint": "^8.13.0"
   }
 }

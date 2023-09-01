@@ -5,22 +5,26 @@
       "type": "build"
     },
     {
+      "name": "@types/estree",
+      "type": "build"
+    },
+    {
       "name": "@types/node",
-      "version": "^14",
+      "version": "^18",
       "type": "build"
     },
     {
       "name": "@typescript-eslint/eslint-plugin",
-      "version": "^5",
+      "version": "^6",
       "type": "build"
     },
     {
       "name": "@typescript-eslint/parser",
-      "version": "^5",
+      "version": "^6",
       "type": "build"
     },
     {
-      "name": "@vitest/coverage-c8",
+      "name": "@vitest/coverage-v8",
       "type": "build"
     },
     {

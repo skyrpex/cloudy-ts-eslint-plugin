@@ -6,17 +6,17 @@ const project = new typescript.TypeScriptProject({
 
   deps: [],
   peerDeps: ["eslint"],
-  devDeps: ["eslint", "@types/eslint"],
+  devDeps: ["eslint", "@types/eslint", "@types/estree"],
 
   // ESM.
   entrypoint: "lib/index.cjs",
   entrypointTypes: "",
   tsconfig: {
     compilerOptions: {
-      lib: ["ES2020"],
-      target: "ES2020",
-      module: "ES2020",
-      moduleResolution: "node",
+      lib: ["ES2022"],
+      target: "ES2022",
+      module: "ES2022",
+      moduleResolution: "NodeNext",
       noUncheckedIndexedAccess: true,
     },
   },
@@ -40,7 +40,10 @@ const project = new typescript.TypeScriptProject({
     projenCredentials: github.GithubCredentials.fromApp(),
   },
   npmAccess: javascript.NpmAccess.PUBLIC,
-  minNodeVersion: "14.18.0",
+  minNodeVersion: "18.16.0",
+  workflowNodeVersion: "18.16.1",
+  packageManager: javascript.NodePackageManager.PNPM,
+  pnpmVersion: "8",
 });
 
 // Docs.
@@ -65,21 +68,18 @@ project.addFields({
 project.addDevDeps("esbuild");
 project.compileTask.reset();
 project.compileTask.prependExec(
-  "esbuild src/index.ts --bundle --target=es2020 --platform=node --format=esm --outfile=lib/index.js"
+  "esbuild src/index.ts --bundle --target=node18 --platform=node --format=esm --outfile=lib/index.js",
 );
 project.compileTask.prependExec(
-  "esbuild src/index.ts --bundle --target=es2020 --platform=node --format=cjs --outfile=lib/index.cjs"
+  "esbuild src/index.ts --bundle --target=node18 --platform=node --format=cjs --outfile=lib/index.cjs",
 );
 
 // Test.
 project.npmignore?.addPatterns("/coverage/");
 
-project.addDevDeps("vitest", "@vitest/coverage-c8");
+project.addDevDeps("vitest", "@vitest/coverage-v8");
 project.testTask.exec("vitest test/rules --passWithNoTests --coverage --run");
 
-project.compileTask.prependExec(
-  "yarn link && cd ./test/test-app && yarn && yarn link @cloudy-ts/eslint-plugin"
-);
 project.testTask.exec("vitest test/test-app/index.test.ts --run");
 
 project.watchTask.reset();
