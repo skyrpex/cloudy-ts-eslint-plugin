@@ -40,7 +40,8 @@ const project = new typescript.TypeScriptProject({
     projenCredentials: github.GithubCredentials.fromApp(),
   },
   npmAccess: javascript.NpmAccess.PUBLIC,
-  minNodeVersion: "18.16.1",
+  minNodeVersion: "18.16.0",
+  workflowNodeVersion: "18.16.1",
   packageManager: javascript.NodePackageManager.PNPM,
   pnpmVersion: "8",
 });
