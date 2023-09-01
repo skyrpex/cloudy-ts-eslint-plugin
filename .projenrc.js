@@ -67,10 +67,10 @@ project.addFields({
 project.addDevDeps("esbuild");
 project.compileTask.reset();
 project.compileTask.prependExec(
-  "esbuild src/index.ts --bundle --target=es2020 --platform=node --format=esm --outfile=lib/index.js",
+  "esbuild src/index.ts --bundle --target=node18 --platform=node --format=esm --outfile=lib/index.js",
 );
 project.compileTask.prependExec(
-  "esbuild src/index.ts --bundle --target=es2020 --platform=node --format=cjs --outfile=lib/index.cjs",
+  "esbuild src/index.ts --bundle --target=node18 --platform=node --format=cjs --outfile=lib/index.cjs",
 );
 
 // Test.

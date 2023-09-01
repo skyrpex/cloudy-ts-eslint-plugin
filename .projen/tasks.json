@@ -78,10 +78,10 @@
       "description": "Only compile",
       "steps": [
         {
-          "exec": "esbuild src/index.ts --bundle --target=es2020 --platform=node --format=cjs --outfile=lib/index.cjs"
+          "exec": "esbuild src/index.ts --bundle --target=node18 --platform=node --format=cjs --outfile=lib/index.cjs"
         },
         {
-          "exec": "esbuild src/index.ts --bundle --target=es2020 --platform=node --format=esm --outfile=lib/index.js"
+          "exec": "esbuild src/index.ts --bundle --target=node18 --platform=node --format=esm --outfile=lib/index.js"
         }
       ]
     },
