@@ -52,7 +52,7 @@ export const rule: Rule.RuleModule = {
           fix(fixer) {
             return fixer.replaceTextRange(
               [range[0] + 1, range[1] - 1],
-              value.replace(/\.ts$/, ".js")
+              value.replace(/\.ts$/, ".js"),
             );
           },
         });
@@ -81,7 +81,7 @@ export const rule: Rule.RuleModule = {
               fix(fixer) {
                 return fixer.insertTextAfterRange(
                   [range[0] + 1, range[1] - 1],
-                  replacement
+                  replacement,
                 );
               },
             });
