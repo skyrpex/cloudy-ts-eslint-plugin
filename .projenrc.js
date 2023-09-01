@@ -13,10 +13,10 @@ const project = new typescript.TypeScriptProject({
   entrypointTypes: "",
   tsconfig: {
     compilerOptions: {
-      lib: ["ES2020"],
-      target: "ES2020",
-      module: "ES2020",
-      moduleResolution: "node",
+      lib: ["ES2022"],
+      target: "ES2022",
+      module: "ES2022",
+      moduleResolution: "NodeNext",
       noUncheckedIndexedAccess: true,
     },
   },
@@ -40,7 +40,9 @@ const project = new typescript.TypeScriptProject({
     projenCredentials: github.GithubCredentials.fromApp(),
   },
   npmAccess: javascript.NpmAccess.PUBLIC,
-  minNodeVersion: "14.18.0",
+  minNodeVersion: "18.0.0",
+  packageManager: javascript.NodePackageManager.PNPM,
+  pnpmVersion: "8",
 });
 
 // Docs.
@@ -74,7 +76,7 @@ project.compileTask.prependExec(
 // Test.
 project.npmignore?.addPatterns("/coverage/");
 
-project.addDevDeps("vitest", "@vitest/coverage-c8");
+project.addDevDeps("vitest", "@vitest/coverage-v8");
 project.testTask.exec("vitest test/rules --passWithNoTests --coverage --run");
 
 project.compileTask.prependExec(

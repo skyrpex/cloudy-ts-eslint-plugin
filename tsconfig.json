@@ -10,9 +10,9 @@
     "inlineSourceMap": true,
     "inlineSources": true,
     "lib": [
-      "ES2020"
+      "ES2022"
     ],
-    "module": "ES2020",
+    "module": "ES2022",
     "noEmitOnError": false,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
@@ -25,8 +25,8 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "stripInternal": true,
-    "target": "ES2020",
-    "moduleResolution": "node",
+    "target": "ES2022",
+    "moduleResolution": "NodeNext",
     "noUncheckedIndexedAccess": true
   },
   "include": [

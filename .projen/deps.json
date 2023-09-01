@@ -6,7 +6,7 @@
     },
     {
       "name": "@types/node",
-      "version": "^14",
+      "version": "^18",
       "type": "build"
     },
     {
@@ -20,7 +20,7 @@
       "type": "build"
     },
     {
-      "name": "@vitest/coverage-c8",
+      "name": "@vitest/coverage-v8",
       "type": "build"
     },
     {
