@@ -6,7 +6,7 @@ const project = new typescript.TypeScriptProject({
 
   deps: [],
   peerDeps: ["eslint"],
-  devDeps: ["eslint", "@types/eslint"],
+  devDeps: ["eslint", "@types/eslint", "@types/estree"],
 
   // ESM.
   entrypoint: "lib/index.cjs",
@@ -79,9 +79,6 @@ project.npmignore?.addPatterns("/coverage/");
 project.addDevDeps("vitest", "@vitest/coverage-v8");
 project.testTask.exec("vitest test/rules --passWithNoTests --coverage --run");
 
-project.compileTask.prependExec(
-  "yarn link && cd ./test/test-app && yarn && yarn link @cloudy-ts/eslint-plugin"
-);
 project.testTask.exec("vitest test/test-app/index.test.ts --run");
 
 project.watchTask.reset();
