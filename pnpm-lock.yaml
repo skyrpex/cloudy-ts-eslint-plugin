@@ -49,13 +49,13 @@ importers:
         version: 5.0.0(@types/eslint@8.44.2)(eslint-config-prettier@9.0.0)(eslint@8.48.0)(prettier@3.0.3)
       npm-check-updates:
         specifier: ^16
-        version: 16.13.2
+        version: 16.13.3
       prettier:
         specifier: ^3.0.3
         version: 3.0.3
       projen:
-        specifier: ^0.73.9
-        version: 0.73.9
+        specifier: ^0.73.11
+        version: 0.73.11
       standard-version:
         specifier: ^9
         version: 9.5.0
@@ -3792,8 +3792,8 @@ packages:
       npm-normalize-package-bin: 3.0.1
     dev: true
 
-  /npm-check-updates@16.13.2:
-    resolution: {integrity: sha512-0pQI+k1y0JVwenB2gBc69tXFYfkckSVrNrlcn7TIrZfis4LnfdzakY/LYzZKt/lx37edN2isk3d2Zw4csptu/w==}
+  /npm-check-updates@16.13.3:
+    resolution: {integrity: sha512-l3FQtm+ZtDwqtK2r27vCuNdtnoDsXzk8D2WczvrAJy2bGPZJvRmuUa/Q9Gv+AbZV0IHSNJD2oHtQqUeqQRhEsw==}
     engines: {node: '>=14.14'}
     hasBin: true
     dependencies:
@@ -4271,8 +4271,8 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /projen@0.73.9:
-    resolution: {integrity: sha512-5cN1476ygzCkwpBq/T0P6G84E1uoXb4YCZomU/mb5Hm8cnauGNWTZqGnpDyVhjdJQTUuGBTw8qaPvZHLJq6MpA==}
+  /projen@0.73.11:
+    resolution: {integrity: sha512-T1nrxTsROdXp7CtQvRlbcCYTTucM/7O816xaA3mmmshi+FXt2T0TyeWlxX3F+m48Dfs7cclM90UP3EhGHeK5Yg==}
     engines: {node: '>= 14.0.0'}
     hasBin: true
     dependencies:
