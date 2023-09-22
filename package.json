@@ -25,7 +25,7 @@
     "@types/node": "^18",
     "@typescript-eslint/eslint-plugin": "^6",
     "@typescript-eslint/parser": "^6",
-    "@vitest/coverage-v8": "^0.34.4",
+    "@vitest/coverage-v8": "^0.34.5",
     "esbuild": "^0.19.3",
     "eslint": "^8.49.0",
     "eslint-config-prettier": "^9.0.0",
@@ -35,10 +35,10 @@
     "eslint-plugin-prettier": "^5.0.0",
     "npm-check-updates": "^16",
     "prettier": "^3.0.3",
-    "projen": "^0.73.27",
+    "projen": "^0.73.28",
     "standard-version": "^9",
     "typescript": "^5.2.2",
-    "vitest": "^0.34.4"
+    "vitest": "^0.34.5"
   },
   "peerDependencies": {
     "eslint": "^8.49.0"
