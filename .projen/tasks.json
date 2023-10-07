@@ -223,13 +223,13 @@
           "exec": "pnpm update npm-check-updates"
         },
         {
-          "exec": "npm-check-updates --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@types/eslint,@types/estree,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,@vitest/coverage-v8,esbuild,eslint,eslint-config-prettier,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-prettier,npm-check-updates,prettier,projen,standard-version,typescript,vitest"
+          "exec": "npm-check-updates --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@types/eslint,@types/estree,@types/node,@typescript-eslint/eslint-plugin,@typescript-eslint/parser,@vitest/coverage-v8,esbuild,eslint-config-prettier,eslint-import-resolver-node,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-prettier,eslint,npm-check-updates,prettier,projen,standard-version,typescript,vitest"
         },
         {
           "exec": "pnpm i --no-frozen-lockfile"
         },
         {
-          "exec": "pnpm update @types/eslint @types/estree @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser @vitest/coverage-v8 esbuild eslint eslint-config-prettier eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-prettier npm-check-updates prettier projen standard-version typescript vitest"
+          "exec": "pnpm update @types/eslint @types/estree @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser @vitest/coverage-v8 esbuild eslint-config-prettier eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint-plugin-prettier eslint npm-check-updates prettier projen standard-version typescript vitest"
         },
         {
           "exec": "npx projen"
