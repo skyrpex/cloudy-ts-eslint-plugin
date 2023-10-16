@@ -54,8 +54,8 @@ importers:
         specifier: ^3.0.3
         version: 3.0.3
       projen:
-        specifier: ^0.74.12
-        version: 0.74.12
+        specifier: ^0.74.17
+        version: 0.74.17
       standard-version:
         specifier: ^9
         version: 9.5.0
@@ -4338,8 +4338,8 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /projen@0.74.12:
-    resolution: {integrity: sha512-byqKXt8r7K2WtsYmyE9C49Ud5OYNCFMafS4Ei88IyfzG1OfkjYUdvu5ToYjKR4WcIa4nlrDWwCjWpYPIGAjXrQ==}
+  /projen@0.74.17:
+    resolution: {integrity: sha512-5TWAuj9okHUiahp4ao9czf1scBZyT8qjDUfZbxb6hcTQmacSabq/SsF2SZrbM3r+OD162YVWizDoIoE15vMhgQ==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     dependencies:
