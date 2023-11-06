@@ -36,7 +36,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "npm-check-updates": "^16",
     "prettier": "^3.0.3",
-    "projen": "^0.76.18",
+    "projen": "^0.76.20",
     "standard-version": "^9",
     "typescript": "^5.2.2",
     "vitest": "^0.34.6"
