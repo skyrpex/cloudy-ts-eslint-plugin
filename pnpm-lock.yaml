@@ -51,8 +51,8 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1
       projen:
-        specifier: ^0.78.8
-        version: 0.78.8(constructs@10.3.0)
+        specifier: ^0.78.10
+        version: 0.78.10(constructs@10.3.0)
       standard-version:
         specifier: ^9
         version: 9.5.0
@@ -3255,8 +3255,8 @@ packages:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
     dev: true
 
-  /projen@0.78.8(constructs@10.3.0):
-    resolution: {integrity: sha512-m/wHBKy1L8SWrxRCpXNHV8CtFgC2jjS/7NUmJsOEh5AURQCAdJT2NY94jsN+jffYpCYapBI7x2TraYpKlI9xag==}
+  /projen@0.78.10(constructs@10.3.0):
+    resolution: {integrity: sha512-Sm6AkrlggH5dCjAyGCbGJCFlm1MLjHS1pOVFklSx0PakFXJxCRg6cp8foBE4fwR0Y59kAXe3yhAolaESwd4AXw==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     peerDependencies:

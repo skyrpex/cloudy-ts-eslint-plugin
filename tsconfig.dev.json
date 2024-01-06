@@ -28,10 +28,10 @@
     "noUncheckedIndexedAccess": true
   },
   "include": [
-    ".projenrc.js",
     "src/**/*.ts",
     "test/**/*.ts",
-    "test/**/*.tsx"
+    "test/**/*.tsx",
+    ".projenrc.js"
   ],
   "exclude": [
     "node_modules"
