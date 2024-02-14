@@ -221,7 +221,7 @@
       },
       "steps": [
         {
-          "exec": "pnpx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@types/eslint,@types/estree,@vitest/coverage-v8,esbuild,eslint-config-prettier,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-prettier,prettier,projen,typescript,vitest,eslint"
+          "exec": "pnpm dlx npm-check-updates@16 --upgrade --target=minor --peer --dep=dev,peer,prod,optional --filter=@types/eslint,@types/estree,@vitest/coverage-v8,esbuild,eslint-config-prettier,eslint-import-resolver-typescript,eslint-plugin-import,eslint-plugin-prettier,prettier,projen,typescript,vitest,eslint"
         },
         {
           "exec": "pnpm i --no-frozen-lockfile"
