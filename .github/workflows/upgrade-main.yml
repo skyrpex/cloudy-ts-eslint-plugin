@@ -19,7 +19,7 @@ jobs:
         with:
           ref: main
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2.2.4
+        uses: pnpm/action-setup@v3
         with:
           version: "8"
       - name: Setup Node.js
@@ -73,7 +73,7 @@ jobs:
           git config user.email "github-actions@github.com"
       - name: Create Pull Request
         id: create-pr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ steps.generate_token.outputs.token }}
           commit-message: |-
