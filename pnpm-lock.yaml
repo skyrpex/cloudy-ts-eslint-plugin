@@ -51,8 +51,8 @@ importers:
         specifier: ^3.2.5
         version: 3.2.5
       projen:
-        specifier: ^0.80.5
-        version: 0.80.5(constructs@10.3.0)
+        specifier: ^0.80.7
+        version: 0.80.7(constructs@10.3.0)
       standard-version:
         specifier: ^9
         version: 9.5.0
@@ -3255,8 +3255,8 @@ packages:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
     dev: true
 
-  /projen@0.80.5(constructs@10.3.0):
-    resolution: {integrity: sha512-91y0DDWc6Y3iQkX3/5sbM8rCVgIY/gq8LpvaGEOXpioA0RT4qnGKwfcsTxEZuCGMGElH0KGQPKf/Zlt0CRFv8Q==}
+  /projen@0.80.7(constructs@10.3.0):
+    resolution: {integrity: sha512-Kmn9pF90oWI5qyieobBapfV8ywD3zLRUfYVZyw1/QLVha4NOjNwtDy0XQe2oZjHmCDkGeK5HYI5bdI1hGTm/TA==}
     engines: {node: '>= 16.0.0'}
     hasBin: true
     peerDependencies:
@@ -3265,7 +3265,6 @@ packages:
       constructs: 10.3.0
     dev: true
     bundledDependencies:
-      - '@iarna/toml'
       - case
       - chalk
       - comment-json
@@ -3273,6 +3272,7 @@ packages:
       - fast-json-patch
       - glob
       - ini
+      - json2toml
       - semver
       - shx
       - xmlbuilder2
