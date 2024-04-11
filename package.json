@@ -36,7 +36,7 @@
     "prettier": "^3.2.5",
     "projen": "^0.80.20",
     "standard-version": "^9",
-    "typescript": "^5.4.4",
+    "typescript": "^5.4.5",
     "vitest": "^0.34.6"
   },
   "peerDependencies": {
